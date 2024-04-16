@@ -7,8 +7,6 @@ with open("keys/.openai_api_key.txt", "r") as f:
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 st.title("Code Reviewer with OpenAI")
-
-st.header("Enter Your Python Code",divider='rainbow')
 prompt = st.text_area("Enter your Python code here:", height=200)
 
 if st.button("Review the Code"):
